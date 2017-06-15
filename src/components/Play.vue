@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="video-download-content">
-            <a @click="downloadVideo(index)" :href="item.url" class="video-download-btn" :class="{active: active === index}" v-for="(item, index) in video.downloadList" download="">
+            <a @click="downloadVideo(index)" :href="item.url" class="video-download-btn" :class="{active: active === index}" v-for="(item, index) in video.downloadList" :download="item.filename">
                 <span v-html="item.alias"></span><span class="btn-icon"></span>
             </a>
         </div>
@@ -107,7 +107,8 @@
         text-overflow: ellipsis;
         display: -webkit-box; 
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2; 
+        -webkit-line-clamp: 2;
+        font-family: Roboto-Medium;
     }
 
     .video-tip {
@@ -141,10 +142,11 @@
     }
 
     .video-download-btn {
+        font-family: Roboto-Medium;
         position: relative;
         display: block;
         font-size: 1rem;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
         padding: 10px 0;
         margin-bottom: 16px;
         border: 1px solid #bdbdbd;
@@ -167,6 +169,7 @@
 
     .video-download-content .active {
         color: #fff;
+        font-weight: bold;
         background: #5882F5;
         border: 1px solid #5882F5;
     }

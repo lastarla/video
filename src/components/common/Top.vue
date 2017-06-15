@@ -1,7 +1,7 @@
 <template>
     <div class="top">
         <div class="top-cont" v-if="!isList">
-            <span class="logo"></span>Video
+            <span class="logo"></span>
         </div>
         <div class="top-cont top-cont-list" v-if="isList">
             <div class="back" @click="back">
@@ -32,27 +32,27 @@ export default {
 
 <style>
 .top {
-    height: 3.571rem;
-    margin-bottom: 1px;
     background: #fff;
 }
 .top-cont {
+    height: 30px;
     font-size: 1.571rem;
     color: #303030;
-    padding: 0 20px;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 .top-cont-list {
+    height: auto;
     padding: 0 20px 0 0;
+    border-bottom: none;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
 }
 .logo {
     display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: rgba(233,38,53,0.26);
-    vertical-align: bottom;
-    margin: 0.928rem 5px 0 0;
+    width: 101px;
+    height: 30px;
+    background: url('../../assets/img/logo.png') no-repeat;
+    background-size: 100%;
 }
 
  .back {

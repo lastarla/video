@@ -67,7 +67,7 @@
 .swiper-main {
     padding: 10px;
     background: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
 }
 

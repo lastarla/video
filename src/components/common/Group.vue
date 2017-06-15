@@ -78,7 +78,7 @@
         padding: 10px 8px;
         background: #fff;
         box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         overflow: hidden;
     }
 
@@ -142,6 +142,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         margin-right: 3px;
+        vertical-align: -1.5px;
     }
 
     .group-play {

@@ -17,7 +17,7 @@
     .tip {
         background: #fff;
         box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .tip-cont {
@@ -32,8 +32,8 @@
 
     .tip-cont a {
         display: block;
-        height: 1.857rem;
-        line-height: 1.857rem;
+        height: 1.6rem;
+        line-height: 1.6rem;
         font-size: 1rem;
         padding: 0 5px;
         margin: 0 5px;

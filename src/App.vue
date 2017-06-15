@@ -124,9 +124,6 @@ html {
 a {
     text-decoration: none;
 }
-@media screen and (min-width:320px) and (max-width:360px){
-    html{font-size:12px}
-}
 @media screen and (min-width:640px) and (max-width:799px){
     html{font-size:24px}
 }
