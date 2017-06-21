@@ -13,7 +13,7 @@ export default {
 
             let groups = state.groups[0];
 
-            if (groups) {
+            if (groups && !data.reload) {
                 groups.list = groups.list.concat(data.list);
                 groups.page = data.page;
                 groups.isEnd = data.isEnd;
@@ -27,7 +27,12 @@ export default {
                 obj.isEnd = data.isEnd;
                 obj.category = data.category;
 
-                state.groups.push(obj);
+                if (data.reload) {
+                    state.groups.splice(0, 1, obj);
+                }
+                else {
+                    state.groups.push(obj);
+                }
             }
         }
         else {

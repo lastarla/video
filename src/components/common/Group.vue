@@ -35,6 +35,9 @@
             this.fetchData();
             this.increment();
         },
+        watch: {
+            '$route': 'loadGroup'
+        },
         computed: {
             groups() {
                 return this.$store.state.groups[0]
@@ -43,7 +46,7 @@
             }
         },
         methods: {
-            fetchData() {
+            fetchData(reload) {
                 const size = 10;
 
                 store.dispatch({
@@ -51,6 +54,7 @@
                     category: this.$route.params[0],
                     dataType: 'groups',
                     size: size,
+                    reload: reload,
                     loaded: this.loaded,
                     loadAll: this.loadAll
                 });
@@ -68,6 +72,10 @@
                 this.$emit('increment', {
                     fetchData: this.fetchData
                 });
+            },
+
+            loadGroup() {
+                this.fetchData(true);
             }
         }
     }

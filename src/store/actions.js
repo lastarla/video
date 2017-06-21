@@ -72,6 +72,7 @@ export default {
                     commit(types.GET_LIST, {
                         dataType: data.dataType,
                         category: data.category,
+                        reload: data.reload,
                         list: result.data,
                         page: result.page,
                         isEnd: result.isEnd

@@ -1,1 +1,1 @@
-export const root = 'http://nuttycase.com/vd/';
+export const root = 'http://api.free17.com/';
